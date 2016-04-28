@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+section {
+	font-size: 16px;
+	background-color: black;
+	padding: 1rem;
+	height: 100vh;
+}
+div#left {
+	float: left;
+	background-color: rgb(50,50,50);
+	width: 80%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+}
+div#right {
+	background-color: rgb(0,175,215);
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+}
+.card {
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	display: inline-block;
+}
+.card:hover {
+	cursor: grab;
+}
+.card:active {
+	cursor: grabbing;
+}
