@@ -24,6 +24,7 @@ div#right {
 	width: 100px;
 	border: 1px solid black;
 	display: inline-block;
+
 }
 .card:hover {
 	cursor: grab;
