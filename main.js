@@ -28,6 +28,7 @@ cards.click(function(){
 	});
 });
 
+$('.card').draggable({scroll: false, containment: "section"});
 
 
 
