@@ -10,9 +10,7 @@ $(function(){
 		return Math.round(Math.random() * factor); 
 	}
 	
-	function resetZ(id) {
-	
-		var z = parseInt($('#' + id).css('z-index'));
+	function resetZ(z) {
 		var card = cards.splice(z,1)[0];
 		cards.push(card);
 		cards.each(function(index){
@@ -45,8 +43,14 @@ $(function(){
 		}
 	});
 	
-	$('.card').mousedown(function(e) {
-		resetZ(e.target.id);
+	cards.mousedown(function(e) {
+		var z = '';
+		if($(e.target.parentNode).hasClass('card')) {
+			z = e.target.parentNode.style.zIndex;
+		} else {
+			z = e.target.style.zIndex;
+		}
+		resetZ(z);
 	});
 });
 
