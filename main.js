@@ -52,6 +52,16 @@ $(function(){
 		}
 		resetZ(z);
 	});
+
+	cards.click(function(e){
+		$(e.target).dialog({
+			modal:true,
+			show: true,
+			hide: true,
+			title: "Card Title"
+		});
+	});
+
 });
 
 
