@@ -28,7 +28,7 @@ $(function(){
 			'z-index': index
 		});
 	});
-	
+
 	$('.card').draggable({
 		scroll: false, 
 		containment: "section", 
@@ -42,7 +42,7 @@ $(function(){
 			//console.log('drag stopped');
 		}
 	});
-	
+
 	cards.mousedown(function(e) {
 		var z = '';
 		if($(e.target.parentNode).hasClass('card')) {

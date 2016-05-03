@@ -30,10 +30,9 @@ div#right {
 	padding: .25rem;
 
 }
-.card:hover {
-	cursor: grab;
+div.card:hover {
 	border: 2px solid yellow;
 }
-.card:active  {
-	cursor: grabbing;
+div.card:active {
+	border: 2px solid blue;
 }
